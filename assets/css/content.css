@@ -1,0 +1,41 @@
+#content {
+    width: 70%;
+    float: left;
+    min-height: 450px;
+    margin-right: 25px;
+}
+
+#content h2 {
+    width: 30%;
+    height: 30%;
+    background: dodgerblue;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    animation: content-h2-animation infinite 10s linear;
+}
+
+#content h2:hover {
+    background: skyblue;
+}
+
+@keyframes content-h2-animation {
+    0% {
+        margin-left: 100px;
+    }
+    25% {
+        margin-left: 200px;
+    }
+
+    50%{
+        margin-left: 300px;
+    }
+
+    75% {
+        margin-left: 200px;
+    }
+
+    100% {
+        text-align: 100px;
+    }
+}
