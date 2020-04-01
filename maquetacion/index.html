@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="assets/css/slider.css">
     <link rel="stylesheet" href="assets/css/sidebar.css">
     <link rel="stylesheet" href="assets/css/content.css">
+    <link rel="stylesheet" href="assets/css/top.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body name="top">
     <header id="header">
@@ -26,8 +28,8 @@
             <!-- MENU NAVEGACIÓN-->
             <nav id="menu">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Tareas</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tasks.html">Tareas</a></li>
                 </ul>
             </nav>
 
@@ -36,24 +38,35 @@
         </div>
     </header>
 
-    <div id="slider">
+    <div id="slider" class="gradient">
         <h1>Bienvenido al React YiPeiTaskmanager</h1>
-        <a href="#" class="btn-white">Ver las tareas</a>
+        <a href="tasks.html" class="btn-white">Ver las tareas</a>
     </div>
 
     <div class="center">
         <section id="content">
-            <h2>Últimas tareas</h2>
+            <h2 id="last-tasks">Últimas tareas</h2>
             <!--Listado de tareas-->
+            <article class="article-item gradient">
+                <div class="img-wrap">
+                    <img src="assets/images/react.svg" alt="Imagen de tarea"/>
+                </div>
+                <h2>Tarea de prueba</h2>
+                <span class="date">Hace 5 minutos</span>
+                <a href="task.html" class="btn btn-primary">Ver la tarea</a>
+                
+                <!-- LIMPIAR FLOTADO-->
+                <div class="clearfix"></div>
+            </article>
         </section>
 
         <aside id="sidebar">
-            <div id="nav-task" class="sidebar-item">
-                <h3>Hay faena?</h3>
+            <div id="nav-task" class="sidebar-item gradient">
+                <h3>Hay tarea?</h3>
                 <a href="#" class="btn btn-success">Crear tarea</a>
             </div>
            
-            <div id="nav-task" class="sidebar-item">
+            <div id="nav-task" class="sidebar-item gradient">
                 <h3>Buscador</h3>
                 <p>Encuentra tú tarea aquí</p>
                 <form action="">
@@ -67,7 +80,7 @@
     <!-- LIMPIAR FLOTADO-->
     <div class="clearfix"></div>
 
-    <div class="top">
+    <div class="top gradient">
         <a href="#top">
             <i class="up"></i><br>
         </a>
